@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <title>Реєстрація</title>
+</head>
+
+<body>
+  <div class="background">
+    <div class="container">
+      <div class="nav">
+        <ul class="list">
+          <li class="list-item"><a href="../index.html">Головна</a></li>
+          <li class="list-item"><a href="articles.html">Статті</a></li>
+          <li class="list-item"><a href="catalog.html">Каталог</a></li>
+          <li class="list-item"><a href="contacts.html">Контакти</a></li>
+          <li class="list-item"><a href="gallery.html">Галерея</a></li>
+          <li class="list-item"><a href="page-nav.html">Навігація</a></li>
+          <li class="list-item active"><a href="registration.html">Реєстрація</a></li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <form action="https://tests.fomenko.top/echo/index.php" method="post">
+          <fieldset>
+            <legend>Реєстрація</legend>
+            <div>
+              <label for="name">Прізвище ім'я:</label>
+              <input type="text" id="name" name="name" placeholder="Name">
+            </div>
+
+            <div>
+              <label for="birthday">Дата народження:</label>
+              <input type="date" id="birthday" name="birthday">
+            </div>
+
+            <div>
+              <label for="photo">Додати фотографію:</label>
+              <input type="file" id="photo" name="photo">
+            </div>
+
+            <div>
+              <label for="email">Адреса електронної пошти:</label>
+              <input type="email" id="email" name="email" placeholder="@mail" required>
+            </div>
+
+            <div>
+              <label for="password">Пароль:</label>
+              <input type="password" id="password" name="password" placeholder="qwerty" required>
+            </div>
+
+            <div>
+              <label for="website">Адреса сайту:</label>
+              <input type="url" id="website" name="website" value="https://mysite.name">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Вибаріть стать:</legend>
+            <div>
+              <input type="radio" id="male" name="gender" value="male">
+              <label for="male">Чоловіча</label>
+            </div>
+            <div>
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">Жіноча</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Виберіть кухню:</legend>
+            <div>
+              <input type="checkbox" id="italian" name="cuisine[]" value="italian">
+              <label for="italian">Італійська</label>
+            </div>
+            <div>
+              <input type="checkbox" id="japanese" name="cuisine[]" value="japanese">
+              <label for="japanese">Японська</label>
+            </div>
+            <div>
+              <input type="checkbox" id="mexican" name="cuisine[]" value="mexican">
+              <label for="mexican">Мексиканська</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Про себе:</legend>
+            <div>
+              <textarea id="about" name="about" rows="5" cols="30" placeholder="Декілька речень"></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Кнопки</legend>
+            <div>
+              <button type="submit" class="btn">Зареєструватися</button>
+            </div>
+            <div>
+              <button type="reset" class="btn">Очистити форму</button>
+            </div>
+          </fieldset>
+
+        </form>
+      </div>
+      <footer>
+        &copy; Bondar Oleksandr
+      </footer>
+    </div>
+  </div>
+
+</body>
+
+</html>
